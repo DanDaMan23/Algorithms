@@ -19,17 +19,17 @@ namespace Algorithms
                 numbers[i] = rnd.Next(0, 30);
             }
 
-            //foreach (int x in Sorting.SelectionSort(numbers))
-            //{
-            //    Console.WriteLine(x);
-            //}
-
-            Console.WriteLine();
-
-            foreach (int x in Sorting.InsertionSort(numbers))
+            foreach (int x in Sorting.SelectionSort(numbers))
             {
                 Console.WriteLine(x);
             }
+
+            //Console.WriteLine();
+
+            //foreach (int x in Sorting.InsertionSort(numbers))
+            //{
+            //    Console.WriteLine(x);
+            //}
 
             Console.Read();
         }
