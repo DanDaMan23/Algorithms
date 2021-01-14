@@ -19,7 +19,7 @@ namespace Algorithms
                 numbers[i] = rnd.Next(0, 30);
             }
 
-            foreach (int x in Sorting.SelectionSort(numbers))
+            foreach (int x in Sorting.BubbleSort(numbers))
             {
                 Console.WriteLine(x);
             }
