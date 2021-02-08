@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Random rnd = new Random();
 
@@ -16,7 +16,7 @@ namespace Algorithms
             
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = rnd.Next(0, 30);
+                numbers[i] = rnd.Next(0, 10);
             }
 
             foreach (int x in Sorting.BubbleSort(numbers))
@@ -30,6 +30,10 @@ namespace Algorithms
             //{
             //    Console.WriteLine(x);
             //}
+
+            Console.WriteLine("\nSearch");
+
+            Console.WriteLine(Searching.BinarySearch(numbers, 5));
 
             Console.Read();
         }
